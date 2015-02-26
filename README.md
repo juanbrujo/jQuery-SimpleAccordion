@@ -7,7 +7,7 @@
 
 1.  Include your favorite jQuery library (from v1.2.6+)
 2.  Then include this plugin _jQuery-SimpleAccordion.js_
-3.  Inicialize-it when the DOM is ready (before </head>), or not (before </body>):
+3.  Inicialize-it when the DOM is ready (before `</head>`), or not (before `</body>`):
 
 ```javascript
 $(document).ready(function(){
