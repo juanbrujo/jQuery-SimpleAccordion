@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+	<title>jQuery simpleAccordion v0.9</title>
+	
+	<style type="text/css">
+		* { margin: 0; padding: 0; }
+		body { font-family: Georgia, serif; font-size: 1em; }
+		dl { margin: 10px 0; }
+			dt { background: gray; color: white; border-bottom: 1px solid white; padding: 5px; cursor: pointer; }
+			dd { background: lightgray; border-bottom: 1px solid white; padding: 5px;}
+			.selected { background: black; }
+		h1, h2 { text-align: center; margin: 10px; color: gray; text-shadow: black 0 0 2px;}
+		h3, p, ol { margin: 20px 30px; }
+	</style>
+	
+	<script src="jquery-1.2.6.min.js" type="text/javascript"></script>
+	<script src="jquery.simpleAccordion.js" type="text/javascript"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			
+			$('#faq').simpleAccordion({
+				header: "dt",
+				collapsable: "dd",
+				speed: "fast"
+			});
+			
+		});
+	</script>
+	
+</head>
+
+<body>
+	<h1>jQuery simpleAccordion v0.9</h1>
+	<h2>demo</h2>
+	
+	<dl id="faq">
+		<dt>Item 1</dt>
+		<dd>Ut nulla. Vivamus bibendum, nulla ut congue fringilla, lorem ipsum ultricies risus, ut rutrum velit tortor vel purus. In hac habitasse platea dictumst. Duis fermentum, metus sed congue gravida, arcu dui ornare urna, ut imperdiet enim odio dignissim ipsum. Nulla facilisi. Cras magna ante, bibendum sit amet, porta vitae, laoreet ut, justo. Nam tortor sapien, pulvinar nec, malesuada in, ultrices in, tortor. Cras ultricies placerat eros. Quisque odio eros, feugiat non, iaculis nec, lobortis sed, arcu. Pellentesque sit amet sem et purus pretium consectetuer.</dd>
+		<dt>Item 2</dt>
+		<dd>Nunc auctor bibendum eros. Maecenas porta accumsan mauris. Etiam enim enim, elementum sed, bibendum quis, rhoncus non, metus. Fusce neque dolor, adipiscing sed, consectetuer et, lacinia sit amet, quam. Suspendisse wisi quam, consectetuer in, blandit sed, suscipit eu, eros. Etiam ligula enim, tempor ut, blandit nec, mollis eu, lectus. Pellentesque vel dui sed orci faucibus iaculis. Suspendisse dictum magna id purus tincidunt rutrum. Nulla congue. Vivamus sit amet lorem posuere dui vulputate ornare. Phasellus mattis sollicitudin ligula. Duis dignissim felis et urna. Integer adipiscing congue metus. Nam pede. Etiam non wisi. Sed accumsan dolor ac augue. Pellentesque eget lectus. Aliquam nec dolor nec tellus ornare venenatis. Nullam blandit placerat sem. Curabitur quis ipsum. Mauris nisl tellus, aliquet eu, suscipit eu, ullamcorper quis, magna. Mauris elementum, pede at sodales vestibulum, nulla tortor congue massa, quis pellentesque odio dui id est. Cras faucibus augue.</dd>
+		<dt>Item 3</dt>
+		<dd>Vivamus auctor leo vel dui. Aliquam erat volutpat. Phasellus nibh. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras tempor. Morbi egestas, urna non consequat tempus, nunc arcu mollis enim, eu aliquam erat nulla non nibh. Duis consectetuer malesuada velit. Nam ante nulla, interdum vel, tristique ac, condimentum non, tellus. Proin ornare feugiat nisl. Suspendisse dolor nisl, ultrices at, eleifend vel, consequat at, dolor.</dd>
+	</dl> 
+		
+	<h3>Instructions:</h3>
+	<ol>
+		<li>Include your favorite jQuery library</li>
+		<li>Then include this plugin <em>jquery.simpleAccordion.js</em></li>
+		<li>Inicialize-it when the DOM is ready:<br />
+			<code>
+				$(document).ready(function(){<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;$('#id_element').simpleAccordion();<br />
+				});<br /><br />
+			</code>
+			Some settings:<br />
+			<code>
+				header: <em>"selector"</em> (any <strong>tag</strong>, <strong>class</strong> or <strong>id</strong> that will fire the event; default is <strong>dt</strong>)<br />
+				collapsable: <em>"selector"</em> (same as above; default is <strong>dd</strong>)<br />
+				speed: <em>integer</em> (a <strong>integer</strong> in milliseconds, &quot;<strong>slow</strong>&quot;, &quot;<strong>normal</strong>&quot;, &quot;<strong>fast</strong>&quot; as well; default is <strong>fast</strong>)<br /><br />
+			</code>
+		</li>
+		<li>Your code must be like this:<br />
+			<code>
+				&lt;dl id=&quot;id_element&quot;&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dt&gt;Element header&lt;/dl&gt;<br />
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;dd&gt;Element collapsable&lt;/dd&gt;<br />
+				&lt;/dl&gt;
+			</code>
+		<li>Take a cold beer for you, it's done!</li>
+	</ol>
+		
+</body>
+</html>
