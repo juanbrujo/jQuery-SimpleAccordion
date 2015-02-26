@@ -1,0 +1,14 @@
+body { font-family: Georgia, serif; font-size: 1em; }
+dl { margin: 10px 0; }
+	dt { background: gray; color: white; border-bottom: 1px solid white; padding: 5px; cursor: pointer; }
+	dd { background: lightgray; border-bottom: 1px solid white; padding: 5px;margin: 0;}
+	.selected { background: black; }
+h1, h2 { text-align: center; margin: 10px; color: gray; }
+h3, p, ol { margin: 20px 30px; }
+
+.github {
+	border: 2px solid gray;
+	color: gray;
+	text-decoration: none;
+	padding: 5px 10px;
+}

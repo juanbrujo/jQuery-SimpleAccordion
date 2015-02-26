@@ -1,0 +1,31 @@
+{
+	"name": "jQuery-SimpleAccordion",
+	"title": "jQuery SimpleAccordion",
+	"homepage": "https://github.com/juanbrujo/jQuery-SimpleAccordion",
+	"description": "Dead-simple jQuery Accordion plugin",
+	"demo": "http://juanbrujo.github.io/jQuery-SimpleAccordion",
+	"keywords": [
+		"jquery",
+		"plugin",
+		"accordion"
+	],
+	"version": "0.5",
+	"author": {
+		"name": "Jorge Epuñan",
+		"url": "https://github.com/juanbrujo",
+		"twitter": "@csslab"
+	},
+	"licenses": [
+		{
+			"type": "MIT",
+			"url": "http://mit-license.org/",
+			"copyright": "2008"
+		}
+	],
+	"bugs": "https://github.com/juanbrujo/jQuery-SimpleAccordion/issues",
+	"docs": "https://github.com/juanbrujo/jQuery-SimpleAccordion#readme",
+	"download": "https://github.com/juanbrujo/jQuery-SimpleAccordion/archive/master.zip",
+	"dependencies": {
+		"jquery": "1.2.6"
+	}
+}
